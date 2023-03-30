@@ -58,8 +58,7 @@ class HomeScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     color: const Color(0xFFF4F6Fd),
                   ),
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                   child: Row(
                     children: [
                       const Icon(
@@ -86,10 +85,7 @@ class HomeScreen extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
             scrollDirection: Axis.horizontal,
             padding: const EdgeInsets.only(left: 20),
-            child: Row(
-                children: ticketList
-                    .map((singleTicket) => TicketView(ticket: singleTicket))
-                    .toList()),
+            child: Row(children: ticketList.map((singleTicket) => TicketView(ticket: singleTicket)).toList()),
           ),
           const Gap(15),
           Container(
@@ -105,9 +101,7 @@ class HomeScreen extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               padding: const EdgeInsets.only(left: 20),
               child: Row(
-                children: hotelList
-                    .map((singalHotel) => HotelScreen(hotel: singalHotel))
-                    .toList(),
+                children: hotelList.map((singalHotel) => HotelScreen(hotel: singalHotel)).toList(),
               )),
         ],
       ),

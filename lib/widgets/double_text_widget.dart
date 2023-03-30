@@ -4,8 +4,7 @@ import 'package:ticket_booking_app/utils/app_styles.dart';
 class DoubleTextWiddget extends StatelessWidget {
   final String bigText;
   final String smallText;
-  const DoubleTextWiddget(
-      {super.key, required this.bigText, required this.smallText});
+  const DoubleTextWiddget({super.key, required this.bigText, required this.smallText});
 
   @override
   Widget build(BuildContext context) {

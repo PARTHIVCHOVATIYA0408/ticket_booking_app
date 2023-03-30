@@ -1,7 +1,9 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:ticket_booking_app/screens/home_screen.dart';
+import 'package:ticket_booking_app/screens/profile_screen.dart';
 import 'package:ticket_booking_app/screens/search_screen.dart';
+import 'package:ticket_booking_app/screens/ticket_screen.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({super.key});
@@ -11,12 +13,12 @@ class BottomBar extends StatefulWidget {
 }
 
 class _BottomBarState extends State<BottomBar> {
-  int _selactedIndex = 1;
+  int _selactedIndex = 0;
   static final List<Widget> _widgetOption = <Widget>[
     const HomeScreen(),
     const SearchScreen(),
-    const Text("Tickets"),
-    const Text("Profile"),
+    const TicketScreen(),
+    const ProfileScreen(),
   ];
   void _onIteamTapped(int index) {
     setState(() {
